@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: rgb(244, 246, 248);
+}
+
+/* center screens (loading / success) */
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main container */
+.wrapper {
+  max-width: 500px;
+  margin: 40px auto;
+  background: rgb(255, 255, 255);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+  margin-bottom: 4px;
+}
+
+.wrapper p {
+  color:rgb(88, 88, 88) ;
+  font-size: 14px;
+}
+
+/* form fields */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: rgb(25, 118, 210);
+}
+
+/* radio buttons */
+label input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* submit button */
+button {
+  margin-top: 16px;
+  padding: 10px;
+  font-size: 15px;
+  background: rgb(25, 118, 210);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: rgb(160, 160, 160);
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: rgb(19, 91, 161);
+}
